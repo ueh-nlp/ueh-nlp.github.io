@@ -14,7 +14,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f0f0;
+    background: url('background.jpeg') no-repeat center center fixed;
+    background-size: cover;
   }
   .container {
     text-align: center;
@@ -22,9 +23,17 @@
     padding: 20px;
     border: 1px solid #ddd;
     width: 80%;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
   }
   .title {
     color: #333;
+    margin-top: 70px; /* Adjusted to account for the logo */
     margin-bottom: 10px;
   }
   .subtitle {
@@ -40,10 +49,11 @@
 </head>
 <body>
 <div class="container">
+  <img src="/Logo_UEH_xanh.png" alt="UEH University Logo" class="logo">
   <h1 class="title">Project: Natural Language Processing</h1>
   <p class="subtitle">Sentiment Analysis Based on Customer Feedback on Shopee Platform</p>
   <!-- Replace 'your-link.html' with your actual embedded link -->
-  <iframe src="https://056dd8e324f78fcf3b.gradio.live/" title="Using RoBERTa model"></iframe>
+  <iframe src="https://a24987262160b04bbf.gradio.live/" title="Embedded Content"></iframe>
 </div>
 </body>
 </html>
