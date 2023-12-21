@@ -6,31 +6,37 @@
 <link rel="icon" href="logo.png" type="image/x-icon"> <!-- Favicon link -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <title>Sentiment Analysis Project</title>
-  <style>
-      body, html {
-          height: 100%;
-          margin: 0;
-      }
+<title>Sentiment Analysis Project</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
 
-      .bg-video {
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          min-width: 100%; 
-          min-height: 100%;
-      }
+    .bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1;
+    }
 
-      .content {
-          position: relative;
-          z-index: 1;
-          padding: 20px;
-          background-color: rgba(255, 255, 255, 0.6);
-      }
-  </style>
+    .content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white for fade effect */
+        backdrop-filter: blur(5px); /* Optional: Adds blur effect to the background */
+    }
+</style>
 </head>
 <body>
+
+<video autoplay muted loop class="bg-video">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
 
 <title>Project: Natural Language Processing</title>
 <style>
@@ -46,11 +52,13 @@
   }
   .container {
     text-align: center;
-    background: white;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Adding a blur effect */
     padding: 20px;
     border: 1px solid #ddd;
     width: 80%;
     position: relative;
+    border-radius: 15px;
   }
   .logo {
     position: absolute;
@@ -76,7 +84,7 @@
 </head>
 <body>
 <div class="container">
-  <img src="/Logo_UEH_xanh.png" alt="UEH University Logo" class="logo">
+  <img src="Logo_UEH_xanh.png" alt="UEH University Logo" class="logo">
   <h1 class="title">Natural Language Processing Final Project</h1>
   <p class="subtitle">Sentiment Analysis Based on Customer Feedback on Shopee Platform</p>
   <div class="authors">
